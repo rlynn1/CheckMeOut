@@ -3,7 +3,7 @@
 #include "cashierView.h"
 #include "StoreInventory.h"
 #include "order.h"
-#include "ObservablePattern.cpp"
+#include "ObserverPattern.cpp"
 
 class registerController: public IObserver
 {
@@ -14,6 +14,7 @@ private:
 public:
   registerController(StoreInventory *, order *);
   void processOrder();
+  void update();
 };
 
 #endif
